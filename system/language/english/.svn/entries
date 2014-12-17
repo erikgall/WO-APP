@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/system/language/english
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+number_lang.php
+file
+
+
+
+add
+
+calendar_lang.php
+file
+
+
+
+add
+
+ftp_lang.php
+file
+
+
+
+add
+
+migration_lang.php
+file
+
+
+
+add
+
+date_lang.php
+file
+
+
+
+add
+
+form_validation_lang.php
+file
+
+
+
+add
+
+unit_test_lang.php
+file
+
+
+
+add
+
+profiler_lang.php
+file
+
+
+
+add
+
+imglib_lang.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+upload_lang.php
+file
+
+
+
+add
+
+db_lang.php
+file
+
+
+
+add
+
+email_lang.php
+file
+
+
+
+add
+

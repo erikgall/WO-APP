@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/assets/font-awesome-4.1.0/scss
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+_mixins.scss
+file
+
+
+
+add
+
+_core.scss
+file
+
+
+
+add
+
+_variables.scss
+file
+
+
+
+add
+
+_bordered-pulled.scss
+file
+
+
+
+add
+
+_icons.scss
+file
+
+
+
+add
+
+_list.scss
+file
+
+
+
+add
+
+_fixed-width.scss
+file
+
+
+
+add
+
+_larger.scss
+file
+
+
+
+add
+
+_path.scss
+file
+
+
+
+add
+
+_stacked.scss
+file
+
+
+
+add
+
+_rotated-flipped.scss
+file
+
+
+
+add
+
+_spinning.scss
+file
+
+
+
+add
+
+font-awesome.scss
+file
+
+
+
+add
+

@@ -1,0 +1,154 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/application/config
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+migration.php
+file
+
+
+
+add
+
+doctypes.php
+file
+
+
+
+add
+
+development
+dir
+
+
+
+add
+
+wo_rules.php
+file
+
+
+
+add
+
+production
+dir
+
+
+
+add
+
+database.php
+file
+
+
+
+add
+
+config.php
+file
+
+
+
+add
+
+autoload.php
+file
+
+
+
+add
+
+foreign_chars.php
+file
+
+
+
+add
+
+mimes.php
+file
+
+
+
+add
+
+wo_config.php
+file
+
+
+
+add
+
+constants.php
+file
+
+
+
+add
+
+user_agents.php
+file
+
+
+
+add
+
+routes.php
+file
+
+
+
+add
+
+profiler.php
+file
+
+
+
+add
+
+hooks.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+smileys.php
+file
+
+
+
+add
+

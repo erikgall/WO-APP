@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/application/models
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+client_m.php
+file
+
+
+
+add
+
+user_m.php
+file
+
+
+
+add
+
+employee_m.php
+file
+
+
+
+add
+
+billing_m.php
+file
+
+
+
+add
+
+message_m.php
+file
+
+
+
+add
+
+project_m.php
+file
+
+
+
+add
+
+dashboard_m.php
+file
+
+
+
+add
+
+assignment_m.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+act_bill_m.php
+file
+
+
+
+add
+
+accounting_m.php
+file
+
+
+
+add
+
+job_m.php
+file
+
+
+
+add
+
+invoice_m.php
+file
+
+
+
+add
+

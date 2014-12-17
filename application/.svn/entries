@@ -1,0 +1,126 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/application
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+incomplete
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+models
+dir
+
+
+
+add
+
+language
+dir
+
+
+
+add
+
+hooks
+dir
+
+
+
+add
+
+core
+dir
+
+
+
+add
+
+third_party
+dir
+
+
+
+add
+
+views
+dir
+
+
+
+add
+
+helpers
+dir
+
+
+
+add
+
+logs
+dir
+
+
+
+add
+
+config
+dir
+
+
+
+add
+
+controllers
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+libraries
+dir
+
+
+
+add
+
+errors
+dir
+
+
+
+add
+
+header.php
+file
+
+
+
+add
+

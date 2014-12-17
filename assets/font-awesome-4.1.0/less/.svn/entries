@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://github.com:443/champ2959/woapp.git/assets/font-awesome-4.1.0/less
+https://github.com:443/champ2959/woapp.git
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+59fc950e-a94f-38ea-4e4a-ce57b7db7bff
+
+icons.less
+file
+
+
+
+add
+
+list.less
+file
+
+
+
+add
+
+fixed-width.less
+file
+
+
+
+add
+
+larger.less
+file
+
+
+
+add
+
+path.less
+file
+
+
+
+add
+
+stacked.less
+file
+
+
+
+add
+
+rotated-flipped.less
+file
+
+
+
+add
+
+font-awesome.less
+file
+
+
+
+add
+
+spinning.less
+file
+
+
+
+add
+
+mixins.less
+file
+
+
+
+add
+
+core.less
+file
+
+
+
+add
+
+variables.less
+file
+
+
+
+add
+
+bordered-pulled.less
+file
+
+
+
+add
+
