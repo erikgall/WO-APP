@@ -2,7 +2,7 @@
 
 	<div class="col-lg-12">
 
-		<h1 class="page-header">Welcome To The WO APP</h1>
+		<h1 class="page-header"><?=lang('welcome')?></h1>
 
 	</div><!-- /.col-lg-12 -->
 
@@ -21,7 +21,7 @@
          		   	<div class="panel panel-default">                
              
              			<div class="panel-heading">
-                        Open Projects/Jobs
+                        <?=lang('OpenJobs')?>
                         </div>
                         
          				<div class="panel-body">
@@ -43,7 +43,7 @@
          		   	<div class="panel panel-default">                
              
              			<div class="panel-heading">
-                        Message Inbox
+                        <?=lang("MessageInbox")?>
                         </div>
              
          				<div class="panel-body">
@@ -72,7 +72,7 @@
 <script type="text/javascript">
 $(document).ready(function(e) {			
 			
-			$('#new-messages').html('<?php echo img('assets/img/indicator.gif'); ?> loading...');
+			$('#new-messages').html('<?php echo img("assets/img/indicator.gif")." ".lang("loading"); ?>');
 			
 			$.ajax({
 				url: '<?php echo site_url(); ?>admin/dashboard/ajax_get/message/navbar_messages/html',
@@ -87,14 +87,14 @@ $(document).ready(function(e) {
 						var status = '';
 						var li = '<li class="list-group-item">';
 						if (data.messages[i].message_status == '4') {
-							status = '<div class="text-right"><strong><i>New Message</i></strong></div>';
+							status = '<div class="text-right"><strong><i><?=lang("NewMessage")?></i></strong></div>';
 							li = '<li class="bg-success list-group-item">';
 						}
 						str += li + '<a href="<?php echo site_url('admin/dashboard/page/message/edit'); ?>/'+data.messages[i].message_id+'" data-toggle="animate"><div><strong>'+data.messages[i].message_from+'</strong>- '+data.messages[i].user_type+'<span class="pull-right text-muted"><em>'+data.messages[i].message_timestamp+'</em></span></div><div>'+ data.messages[i].message_title + '</div>'+status+'</a></li><li class="divider"></li>';
 						
 						
 						if ((data.messages.length - i ) == 1) {
-							str+= '<li class="list-group-item"><?php echo anchor('admin/dashboard/page/message', '<strong>Read All Messages</strong> <i class="fa fa-angle-right"></i>', 'data-toggle="animate" class="text-center"'); ?></li>';	
+							str+= '<li class="list-group-item"><?php echo anchor('admin/dashboard/page/message', '<strong>'.lang("ReadAllMessages").'</strong> <i class="fa fa-angle-right"></i>', 'data-toggle="animate" class="text-center"'); ?></li>';	
 						}
 					}
 					
@@ -104,7 +104,7 @@ $(document).ready(function(e) {
 			});
 		
 		
-		$('#open-jobs').html('<?php echo img('assets/img/indicator.gif'); ?> loading...');
+		$('#open-jobs').html('<?php echo img('assets/img/indicator.gif')." ".lang("loading"); ?>');
 			
 			$.ajax({
 				url: '<?php echo site_url(); ?>admin/dashboard/ajax_get/job/navbar_open_projects/html',
@@ -133,11 +133,11 @@ $(document).ready(function(e) {
 						}
 						
 
-						str += '<li><a href="<?php echo site_url("admin/dashboard/page/job/project_id"); ?>/'+data[i].project_id+'"><div><p><strong>'+data[i].project_name+'</strong><span class="pull-right text-muted">'+complete+'% Complete</span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-'+css+'" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: '+complete+'%"><span class="sr-only">'+complete+'% Complete (success)</span></div></div></div></a></li>';
+						str += '<li><a href="<?php echo site_url("admin/dashboard/page/job/project_id"); ?>/'+data[i].project_id+'"><div><p><strong>'+data[i].project_name+'</strong><span class="pull-right text-muted">'+complete+'% <?=lang("Complete")?></span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-'+css+'" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: '+complete+'%"><span class="sr-only">'+complete+'% <?=lang("CompleteSuccess")?></span></div></div></div></a></li>';
 					
 						
 					}
-					str += '<li class="text-center"><a class="text-center" href="<?php echo site_url("admin/dashboard/page/job"); ?>"><strong>See All Tasks</strong></a></li>';
+					str += '<li class="text-center"><a class="text-center" href="<?php echo site_url("admin/dashboard/page/job"); ?>"><strong><?=lang("SeeAllTasks")?></strong></a></li>';
 					
 					$('#open-jobs').html(str);
 					
