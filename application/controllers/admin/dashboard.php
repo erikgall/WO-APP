@@ -7,7 +7,7 @@
 			parent::__construct();
 			
 			$this->load->model('dashboard_m');
-		
+            $this->lang->load('general', 'english');
 			$this->data['msg_unread_count'] = $this->dashboard_m->unread_messages();
 			
 			//$this->data['alerts'] = $this->dashboard_m->alerts();
@@ -151,7 +151,7 @@
 						
 						if (isset($_POST[$page . "_password"]) AND $_POST[$page . "_password"] != '') {
 						
-							$data[$page . "_password"] = $this->user_m->hash($this->input->post([$page . "_password"]));
+							$data[$page . "_password"] = $this->user_m->hash($this->input->post([$page . "_password"])); // [$page... ] ???
 						
 						}
 						elseif (isset($_POST["user_password"]) AND $_POST["user_password"] != '') {
@@ -305,7 +305,7 @@
 						elseif (($this->input->post('response') AND $this->input->post('response') == 'json' AND $save != FALSE) OR ($editable == TRUE AND $save != FALSE))  {
 							$response = array(
 								'id' => $save,
-								'msg' => array('Success! The data was saved successfully.'),
+								'msg' => array($this->lang->line('success')),
 								'post' => $data
 							);
 							
@@ -323,12 +323,12 @@
 				
 				}
 				else {
-					echo 'Error! No a valid table';	
+					echo $this->lang->line('NoValidTable');	
 				}
 
 			}
 			else {
-				echo 'Error! Not an Ajax Request';
+				echo $this->lang->line('NoAjaxRequest');
 			}	
 		
 		}
@@ -346,7 +346,7 @@
 					
 					$this->data_m->delete($id);
 					
-					$this->data['status_msg'] = "Delete was successful";
+					$this->data['status_msg'] = $this->lang->line('DeleteSuccessful');
 
 					$this->data['rows'] = $this->data_m->get();
 					$no_response = config_item('delete_response');
@@ -358,7 +358,7 @@
 					}
 					else {
 						
-						echo 'Delete was successful';	
+						echo $this->lang->line('DeleteSuccessful');	
 								
 					}
 				}
@@ -366,11 +366,11 @@
 			}
 			
 			else {
-				$this->data['status_msg'] = "There was an error with the request. Please try again.";	
+				$this->data['status_msg'] = $this->lang->line('ErrorTryAgain');	
 			}
 		}
 
 	}
 	
-/* End of file MY_Model.php */
+/* End of file Dashboard.php */
 /* Location: ./application/controllers/admin/dashboard.php */
